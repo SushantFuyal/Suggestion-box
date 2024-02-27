@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestion Box</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/header.png">
+    <img src="images/flag.png" alt="">
+  </header>
+  <div class="container">
+    <h1>Suggestion Box</h1>
+    <form action="https://api.web3forms.com/submit" method="POST" id="suggestionForm" >
+      <input type="hidden" name="access_key" value="2702fb3a-27eb-4edd-807e-09173182efa6">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name (optional)" class="inputbox">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email (optional)"class="inputbox">
+      <label for="title">Suggestion Title:</label>
+      <input type="text" id="title" name="title" placeholder="Title" class="inputbox" required>
+      <label for="description">Suggestion Description:</label>
+      <textarea id="description" name="description" placeholder="Description" class="inputbox" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <!--  <div id="confirmation"></div> -->
+  </div>
+  
+  <!--  <script src="script.js"></script>  -->
+</body>
+</html>
